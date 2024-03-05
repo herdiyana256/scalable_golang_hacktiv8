@@ -1,0 +1,55 @@
+Variable 
+
+Naming Conventions Variable
+Dalam membuat variable di golang perlu gunakan penulisan yang tepat untuk memudahkan tiap tiap komponent penulisan yang nantinya memiliki bagian atau fungsinya yang berbeda-beda.
+Berikut adalah tipe penulisan yang paling efisien dan banyak digunakan dalam pemrograman menggunakan bahasa GO.
+
+camelCase - camelCase adalah konvensi penamaan dimana huruf oertama dari setiap kata dalam kata majemuk akan dikapitalisasi KECUALI untuk huruf pertama diawal kata 
+dalam kata majemuk akan dikapitalisasi KECUALI untuk huruf pertama diawal kata 
+
+Contoh : 
+
+favoriteColor = "green"
+favoriteShape = "retangle"
+
+note : 
+perharikan huruf f diawal ditulis dengan huruf Kecil, sedangkan untuk huruf "C" dan "S" ditulis huruf besar.
+
+Kapitalisasi akronim - misalnya : HTTP, DNS. URL
+
+
+
+===========================================
+
+Variable with data type
+
+pada bahasa golang sendiri, terdapat 2 cara penulisan untuk menulis variable. yang pertama adalah yang dituliskan tipe datanya dan ada juga yang tidak ditulis tipe datanya atau biasa.
+
+Declaring variable
+- Variable with data type
+Sekarang mari coba untuk membuat variable yang melibatkan tipe data.
+jika yang tidak ditulis tipe data nya atau biasa.
+
+- Variable with data type
+sekarang mari kita coba untuk membuat variable yang mekubatkan tipe data. 
+jika lihat pada gambar dibawah ini, kita telah membuat suatu vairable dengan tipe data yang berbeda.
+Variable pertama menggunakan tipe data string sedangkan variable kedua memakai tipe data int. kedua contoh dibawah ini merupakan contoh dari membuat variable dengan tipe data.
+
+package main
+
+import "fmt"
+
+func main() {
+	var name string = "aerial"
+	var age int = 28
+
+	fmt.Println("Ini adalah namanya ==>", name)
+	fmt.Println("Ini adalah umurnya ==>", age)
+}
+
+/*
+Ini adalah namanya ==> aerial
+Ini adalah umurnya ==> 28
+
+
+*/

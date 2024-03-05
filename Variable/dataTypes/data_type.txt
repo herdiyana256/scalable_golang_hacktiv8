@@ -1,0 +1,30 @@
+DATA TYPES - SESI 1 
+
+NUMBER ( INT )
+
+Tipe data pada bahasa GO terbagi menjadi 4 kategori dengan detail seperti berikut ini : 
+
+1. Basic Type : number, string, Boolean 
+2. Aggregate Type : array dan struct
+3. Reference Type : Slice, pointer, map, function, channel 
+4. Interface Type : Interface 
+
+
+dan pada kali ini, kita akan membahas tentang tipe data pada kategori Basic type.
+
+==============================================
+
+
+Data Types - Sesi 1 
+Number ( Integer )
+
+Tipe data number pada bahasa Go terbagi menjadi 2 sub-kategori taitu integer (non desimal/ no floating-pointer) dan float (desomal / floating point)
+
+
+- Integer 
+Integer merupakan tipe data numerik non desimal pada bahasa Go. Secara umum integer dibagi menjadi sub kategori yaitu uint dan int.
+a. int : Bilangan cacah (Bilangan Positif)
+b. uint : Bilangan bulat (bilangan positif maupun negatif)
+
+
+Kemudian int dan uint terbagi menjadi beberpa jenis kembali.Bisa dilihat keterangan nya gambar disebelah kanan. dan jika kita menggunakan int pada suatu variable, maka int dapat merepresentasikan int32 atau int64 tergantung dari besaran nilai nya.

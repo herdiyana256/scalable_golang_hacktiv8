@@ -1,0 +1,49 @@
+Map dalam bahasa pemrograman Go adalah tipe data yang digunakan untuk memetakan kunci (keys) ke nilai-nilai (values) yang sesuai. Map juga dikenal sebagai associative array, hash map, atau dictionary dalam bahasa pemrograman lainnya. Map digunakan untuk menyimpan data dalam format pasangan kunci-nilai, di mana setiap kunci harus unik dan terkait dengan nilai tertentu.
+
+Fitur utama dari map di Go adalah:
+
+Penyimpanan Data: Map digunakan untuk menyimpan data dalam pasangan kunci-nilai, di mana setiap nilai dapat diakses melalui kuncinya.
+
+Kunci Unik: Setiap kunci dalam map harus unik. Jika Anda memasukkan kunci yang sudah ada, nilai yang sesuai dengan kunci tersebut akan diperbarui.
+
+Dinamis: Map memiliki ukuran yang dinamis. Anda tidak perlu mendeklarasikan ukuran map pada saat pembuatannya.
+
+Efisien: Penyimpanan dan pencarian nilai dalam map dilakukan dengan waktu yang cepat, sehingga map cocok digunakan untuk banyak kasus penggunaan.
+
+Tidak Terurut: Nilai-nilai dalam map tidak disusun dalam urutan tertentu. Oleh karena itu, ketika Anda melakukan iterasi melalui map, urutan iterasi tidak dijamin akan sama seperti urutan penyisipan.
+
+Contoh penggunaan map dalam Go:
+
+go
+Copy code
+package main
+
+import "fmt"
+
+func main() {
+    // Mendeklarasikan map dengan tipe string sebagai kunci dan int sebagai nilai
+    var studentAge = map[string]int{
+        "John":  21,
+        "Alice": 23,
+        "Bob":   22,
+    }
+
+    // Menambahkan elemen baru ke map
+    studentAge["Eve"] = 20
+
+    // Mengakses nilai dalam map
+    fmt.Println("Umur John:", studentAge["John"])
+
+    // Menghapus elemen dari map
+    delete(studentAge, "Alice")
+
+    // Iterasi melalui map
+    for name, age := range studentAge {
+        fmt.Printf("%s berumur %d tahun\n", name, age)
+    }
+}
+Dalam contoh di atas, map studentAge memiliki kunci berupa nama siswa dan nilai berupa umur mereka. Anda dapat menambahkan, mengakses, dan menghapus elemen dalam map, serta melakukan iterasi melalui map untuk mengakses semua pasangan kunci-nilai yang ada.
+
+
+
+

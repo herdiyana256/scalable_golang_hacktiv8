@@ -1,0 +1,107 @@
+Create your first Project with Go 
+
+keywoard package : 
+
+Setiap file program harus memiliki package, setiap project harus ada minimal satu file dengan nama package main .
+File yang ber-package main, akan di ksekusi pertama kali ketika program di jalankan.
+
+Cara menentukan package dengan menggunakan keywoard package, berikut adalah contoh penulisan nya.
+
+contoh :
+package <name-package>
+package main
+
+
+
+1. Create your first project with go 
+
+a.keyword import : 
+Keyboard import digunakan untuk meng-import atau memasukan package lain kedalam file program, agar isi dari package yang di import bisa manfaatkan .
+- package fmt merupakan salah satu package bawaan yang disediakan oleh Go, isinya banyak fungsi untuk keperluan I/O yang berhubungan dengan text.
+
+Berikut adalah skema penulisan keyword import :
+
+import <nama-package>
+import "fmt"
+
+b.Main Function : 
+dalam sebuah proyek harus ada file program yang didalamnya berisi sebuah function bernama main. Function tersebut harus berada di file yang package-nya bernama main.
+
+Function main adalah yang dipanggil pertama kali pada saat eksekusi program.
+
+Func main () {
+
+}
+
+PENJELASAN
+=====================================================
+
+Create your first project with Go
+fmt.println()
+function fmt.println digunakan untuk memunculkan text ke layar (pada konteks ini, terminal atau CMD) . di program pertama yang telah kita buat, fungsi ini memunculkan tulisan Hello world.
+
+Skema penulisan keyboard fmt.prinln() bisa dilihat pada contoh berikut .
+fmt.Println("<isi-pesan")
+fmt.Println("Hello Wolrd")
+
+Function fmt.Println berada dalam package fmt, maka untuk menggunakan nya perlu package tersebut untuk di import terlebih dahulu.
+
+Function fmt.Println dapat menampung parameter yang tidak terbatas jumlahnya. semua data parameter akan di munculkan dengan pemisah tanda spasi.
+
+contoh :
+fmt.Println("Hello World", "Message", "From", "Go")
+
+
+==============================================
+Create your first Project with Go 
+
+fmt.Print ()
+
+Function fmt.Print ini memiliki peran yang sama seperti function fmt.Println, pembeda nya function fmt. Print tidak menghasilkan baris barus di akhir outputnya.
+
+Perbedaan lain nya adalah nilai parameter-parameter yang dimasukkan ke fungsi tersebut digabungkan tanpa pemisah . 
+tidak seperti pada function fmt.Println yang nilai parameternya di gabung menggunakan penghubung space.
+
+
+===========================================
+
+Create your first project with go 
+
+fmt.Print()
+
+Contoh : 
+package main
+
+import "fmt"
+
+func main() {
+	fmt.Println("Hello, 2024!")
+	fmt.Println("Gunpla", "Aerial")
+
+	fmt.Print("Gunpla  Aerial\n")
+	fmt.Print("Gundam", "Aerial")
+	fmt.Print("Aerial", " ", "Jordan\n")
+
+}
+
+/*
+Hello, 2024!
+Gunpla Aerial
+Gunpla  Aerial
+GundamAerialAerial Jordan
+
+
+*/
+
+
+Kode diatas menunjukan perbedaan antara fmt.Println dan fmt.Print . 
+Output yang dihasilkan oleh 5 statement diatas adalah sama, meski cara yang digunakan berbeda.
+
+Bila menggunakan fmt.Println tidak perlu menambahkan spasi ditiap kata, Karena fungsitersebut akan secara otomatis menambahkan di sela-sela nilai. 
+Berbeda dengan fmt.Print, perlu di tambahkan spasi, karena fungsi ini tidak menambahkan spasi disela-sela nilai parameter yang digabungkan.
+
+
+
+
+
+
