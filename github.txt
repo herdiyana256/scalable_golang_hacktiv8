@@ -1,0 +1,42 @@
+1.Inisialisasi repositori Git di dalam direktori proyek Anda (jika belum dilakukan sebelumnya):
+
+git init
+
+
+2.Tambahkan semua file yang ingin Anda sertakan dalam commit:
+git add .
+
+
+
+
+
+3.Buat commit dengan pesan deskriptif:
+git commit -m "Pesan commit Anda di sini"
+
+
+
+
+4.Tautkan repositori lokal Anda dengan repositori GitHub:
+git remote add origin <url_repo_github>
+
+
+
+
+5.(Opsional) Periksa koneksi dengan repositori remote:
+git remote -v
+
+
+
+
+
+6.Tarik (pull) perubahan terbaru dari repositori GitHub (jika diperlukan):
+git pull origin <nama_branch>
+
+
+
+
+7.Dorong (push) commit Anda ke repositori GitHub:
+git push origin <nama_branch>
+
+Gantikan <nama_branch> dengan nama cabang yang Anda inginkan. Jika Anda belum pernah melakukan push sebelumnya, mungkin Anda perlu menambahkan parameter -u pada perintah ini.
+
